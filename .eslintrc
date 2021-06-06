@@ -16,7 +16,7 @@
     "max-len": "off",
     "comma-dangle": "off",
     "global-require": "off",
-    "import/no-duplicates": "warn",
+    "import/no-duplicates": "off",
     "operator-linebreak": "off",
     "arrow-body-style": "warn",
     "no-unused-vars": "warn",

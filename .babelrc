@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "modules": "auto",
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "src": "./src",
+        "core": "./src/core/",
+        "constants": "./src/constants/",
+        "helpers": "./src/helpers/"
+      }
+    }]
+  ]
+}

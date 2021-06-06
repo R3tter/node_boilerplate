@@ -4,11 +4,29 @@
   "description": "node_boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll=false",
+    "build:dev": "webpack --config ./config/webpack.dev.js",
+    "build:prod": "rm -rf ./dist/* && webpack --config ./config/webpack.prod.js",
+    "start:dev": "nodemon ./temp",
+    "start:prod": "node ./dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/R3tter/node_boilerplate.git"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/config/setupTests.js"
+    ],
+    "transform": {
+      "^.+\\.(js)$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -20,10 +38,20 @@
   "devDependencies": {
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.4",
     "@babel/preset-env": "^7.14.4",
+    "babel-jest": "^27.0.2",
     "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.28.0",
-    "eslint-webpack-plugin": "^2.5.4"
+    "eslint-webpack-plugin": "^2.5.4",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   }
 }

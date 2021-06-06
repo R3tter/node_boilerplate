@@ -27,16 +27,16 @@ module.exports = env => ({
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
+    extensions: ['.js', '.ts']
   },
   plugins: [
     new webpack.DefinePlugin({
       DEV: JSON.stringify(true),
       PROD: JSON.stringify(false),
-      VERSION: JSON.stringify(version),
+      VERSION: JSON.stringify(version)
     }),
     new ESLintPlugin({
-      extensions: ['js', 'jsx']
+      extensions: ['js']
     })
   ]
 });

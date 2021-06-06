@@ -27,7 +27,7 @@ module.exports = env => ({
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
+    extensions: ['.js', '.ts']
   },
   plugins: [
     new webpack.DefinePlugin({
