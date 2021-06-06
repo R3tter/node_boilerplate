@@ -1,0 +1,29 @@
+{
+  "name": "node_boilerplate",
+  "version": "1.0.0",
+  "description": "node_boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R3tter/node_boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R3tter/node_boilerplate/issues"
+  },
+  "homepage": "https://github.com/R3tter/node_boilerplate#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^7.28.0",
+    "eslint-webpack-plugin": "^2.5.4"
+  }
+}
