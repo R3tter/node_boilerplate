@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll=false",
-    "build:dev": "webpack --config ./config/webpack.dev.js",
-    "build:prod": "rm -rf ./dist/* && webpack --config ./config/webpack.prod.js",
-    "start:dev": "nodemon ./temp",
-    "start:prod": "node ./dist"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",

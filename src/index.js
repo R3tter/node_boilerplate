@@ -1,7 +1,7 @@
-import express from 'express';
-import bodyParser from 'body-parser';
+const express = require('express');
+const bodyParser = require('body-parser');
 
-import { port } from 'constants';
+const { port } = require('./constants');
 
 const app = express();
 
